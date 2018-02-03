@@ -3,10 +3,10 @@
 namespace Jhp\BookCrud\Controllers;
 
 use Illuminate\Http\Request;
-use Core\Services\IBookService;
+use App\Http\Controllers\Controller;
+use Jhp\BookCrud\Services\IBookService;
 use App\Http\Requests\BookUpdateRequest;
 use App\Http\Requests\BookInsertRequest;
-use App\Http\Controllers\Controller;
 
 class BookController extends Controller
 {
