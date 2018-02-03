@@ -47,7 +47,7 @@ class BookController extends Controller
     public function store(BookInsertRequest $request)
     {
         $this->service->store($request->all());
-        return redirect()->route('bookcrud::books.index');
+        return redirect()->route('books.index');
     }
 
     /**
@@ -84,7 +84,7 @@ class BookController extends Controller
     public function update(BookUpdateRequest $request, $id)
     {
         $this->service->update($id, $request->all());
-        return redirect()->route('bookcrud::books.index');
+        return redirect()->route('books.index');
     }
 
     /**
@@ -96,6 +96,6 @@ class BookController extends Controller
     public function destroy($id)
     {
         $this->service->destroy($id);
-        return redirect()->route('bookcrud::books.index');
+        return redirect()->route('books.index');
     }
 }
