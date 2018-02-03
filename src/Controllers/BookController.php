@@ -5,8 +5,8 @@ namespace Jhp\BookCrud\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Jhp\BookCrud\Services\IBookService;
-use App\Http\Requests\BookUpdateRequest;
-use App\Http\Requests\BookInsertRequest;
+use Jhp\BookCrud\Requests\BookInsertRequest;
+use Jhp\BookCrud\Requests\BookUpdateRequest;
 
 class BookController extends Controller
 {
